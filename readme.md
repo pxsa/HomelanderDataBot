@@ -1,5 +1,9 @@
 # Homelander Data Bot
-![Homelander the GREAT](./Img/homelander.webp)
+
+<p align="center">
+  <img src="./Img/howelander.jpeg"/>
+</p>
+
 
 ## Introduction
 
