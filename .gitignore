@@ -6,5 +6,5 @@ venv
 50k
 generated_faces
 .DS_Store
-bot
 *json
+bot/.env
