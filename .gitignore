@@ -1,0 +1,9 @@
+*.zip
+venv
+*.pth
+*.pt
+50k
+generated_faces
+.DS_Store
+bot
+*json
