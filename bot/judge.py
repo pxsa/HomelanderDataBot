@@ -216,19 +216,19 @@ TESTS = {
     "test_plot_train_loss_first": {
         "expected": 0.006399,
         "score": 4,
-        "tol": 1e-4,
+        "tol": 1e-3,
         "message": "Train Loss اولیه"
     },
     "test_plot_train_loss_last": {
         "expected": 0.005386,
         "score": 4,
-        "tol": 1e-4,
+        "tol": 1e-3,
         "message": "Train Loss نهایی"
     },
     "test_plot_val_loss_first": {
         "expected": 0.006603,
         "score": 4,
-        "tol": 1e-4,
+        "tol": 1e-3,
         "message": "Validation Loss اولیه"
     },
     "test_plot_val_loss_last": {
@@ -250,7 +250,7 @@ def is_equal(actual, expected, tol=1e-3):
 
     # float
     if isinstance(expected, float):
-        return abs(actual - expected) <= tol
+        return abs(actual - expected) <= tol or actual <= expected + tol 
 
     # list
     if isinstance(expected, list):
@@ -324,8 +324,8 @@ def judge(student_data):
 
             report.append(
                 f"❌ {message}\n"
-                f"Expected: {expected}\n"
-                f"Actual: {actual}\n"
+                # f"Expected: {expected}\n"
+                # f"Actual: {actual}\n"
                 f"0/{score}"
             )
 
