@@ -1,0 +1,86 @@
+{
+    "test_dataset_count": 40000,
+    "test_train_count": 40000,
+    "test_val_count": 5000,
+    "test_test_count": 5000,
+    "test_split_seed": 42,
+    "test_image_size": 64,
+    "test_train_transform_names": [
+        "Resize",
+        "RandomHorizontalFlip",
+        "ToTensor"
+    ],
+    "test_test_transform_names": [
+        "Resize",
+        "ToTensor"
+    ],
+    "test_train_flip_p": 0.5,
+    "test_dataset_class_train_len": 40000,
+    "test_dataset_class_val_len": 5000,
+    "test_dataset_class_test_len": 5000,
+    "test_train_loader_shuffle": true,
+    "test_train_batches_count": 625,
+    "test_val_batches_count": 79,
+    "test_test_batches_count": 79,
+    "test_batch_images_shape": [
+        64,
+        3,
+        60,
+        0
+    ],
+    "test_stats_shape": [
+        64,
+        3,
+        64,
+        64
+    ],
+    "test_stats_min": 0.0,
+    "test_stats_max": 1.0,
+    "test_global_mean": [
+        0.5163573026657104,
+        0.41524842381477356,
+        0.36230847239494324
+    ],
+    "test_global_std": [
+        0.2597065567970276,
+        0.231986865401268,
+        0.22424358129501343
+    ],
+    "test_n_samples": 40000,
+    "test_total_params": 2434243,
+    "ae_num_encoder_layers": 12,
+    "ae_num_decoder_layers": 11,
+    "ae_encoder_layer_types": [
+        "Conv2d",
+        "BatchNorm2d",
+        "ReLU",
+        "Conv2d",
+        "BatchNorm2d",
+        "ReLU",
+        "Conv2d",
+        "BatchNorm2d",
+        "ReLU",
+        "Conlk;k;lk;lv2d",
+        "BatchNorm2d",
+        "ReLU"
+    ],
+    "ae_decoder_layer_types": [
+        "ConvTranspose2d",
+        "BatchNorm2d",
+        "ReLU",
+        "ConvTranspose2d",
+        "BatchNorm2d",
+        "ReLU",
+        "ConvTranspose2d",
+        "BatchNorm2d",
+        "ReLU",
+        "ConvTranspose2d",
+        "Sigmoid"
+    ],
+    "test_plot_train_losses_length": 5,
+    "test_plot_val_losses_length": 5,
+    "test_plot_train_loss_first": 74.006399,
+    "test_plot_train_loss_last": 0.005386,
+    "test_plot_val_loss_first": 0.006603,
+    "test_plot_val_loss_last": 0.005333
+}
